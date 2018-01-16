@@ -69,25 +69,6 @@ ul {
     .navbar a {
         font-size: 17px;
     }
-
-    .menu_line ul {
-        margin-top: 7px;
-    }
-
-    .right-buttom > a, .left-buttom > a,
-    .buttom-main > a {
-        text-transform: uppercase;
-        font-size: 15px;
-        color: #720f1b;
-        text-align: center;
-        position: relative;
-        top: 8px;
-    }
-
-    .photo-text h2 {
-        font-size: 40px;
-        font-family: 'fonts';
-    }
 }
 
 .menu_line ul > li {
@@ -110,84 +91,33 @@ ul {
     padding-left: 32px;
 }
 
-@media screen and (max-width: 568px) {
-    .navbar {
-        margin-top: -50px;
-    }
-}
-
 @media screen and (max-width: 768px) {
     .menu_line ul > li:last-child {
         padding-right: 0px;
     }
+}
 
+@media screen and (max-width: 768px) {
     .menu_line ul > li:first-child {
         padding-left: 0px;
     }
+}
 
+@media screen and (max-width: 768px) {
     .menu_line ul > li {
         padding-right: 60px;
     }
+}
 
+@media screen and (max-width: 768px) {
     .menu_line ul > li {
         padding-right: 19px;
     }
+}
 
-    .right-prev, .left-prev {
-        margin-right: 0px;
-        margin-left: 0px;
-    }
-
-    .navbar {
-        margin-top: -105px;
-    }
-
-    .main-block {
-        padding-bottom: 95px;
-    }
-
-    .commercial {
-        margin-left: 80px;
-    }
-
-    .img-commerc {
-        margin-left: 0px;
-        margin-bottom: 0px;
-        margin-top: 0px;
-    }
-
-    .music-img {
-        margin-left: 0px;
-        margin-top: 0px;
-    }
-
-    .music-animation {
-        margin-bottom: 50px;
-        margin-right: 80px;
-        font-family: 'fonts';
-    }
-
-    .commercial-h2 h2,
-    .music-h2 h2,
-    .corporate-h2 h2,
-    .non-profit-h2 h2 {
-        font-size: 60px;
-        color: #fff;
-        text-transform: uppercase;
-        font-family: 'fonts';
-    }
-
-    .corporate {
-        margin-left: 80px;
-    }
-
-    .non-profit-img {
-        margin-top: -100px;
-        margin-right: 40px;
-    }
-
-    .non-profit {
-        margin-right: 80px;
+@media screen and (max-width: 425px) {
+    .menu_line ul {
+        margin-top: 7px;
     }
 }
 
@@ -199,8 +129,27 @@ ul {
     margin-left: 25px;
 }
 
+@media screen and (max-width: 768px) {
+    .right-prev, .left-prev {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
+
 .navbar {
     margin-top: -118px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        margin-top: -105px;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .navbar {
+        margin-top: -50px;
+    }
 }
 
 .line-buttom {
@@ -243,6 +192,18 @@ ul {
     top: 10px;
 }
 
+@media screen and (max-width: 425px) {
+    .right-buttom > a, .left-buttom > a,
+    .buttom-main > a {
+        text-transform: uppercase;
+        font-size: 15px;
+        color: #720f1b;
+        text-align: center;
+        position: relative;
+        top: 8px;
+    }
+}
+
 .buttom-main > a:hover {
     border-color: #d31b32;
     color: #d31b32;
@@ -269,64 +230,6 @@ ul {
         margin-top: 120px;
         margin-bottom: 75px;
     }
-
-    .photo-text {
-        position: relative;
-        top: 30px;
-        margin-left: 0px;
-    }
-
-    .left-block-img {
-        display: flex;
-        justify-content: center;
-    }
-
-    .film-strip {
-        display: none;
-    }
-
-    .line-text {
-        margin: 40px 0px 40px 0px;
-    }
-
-    .filming h2 {
-        font-size: 55px;
-        padding: 55px 0px 16px 0px;
-        font-family: 'fonts';
-    }
-
-    .commercial-h2 {
-        margin-left: 0px;
-    }
-
-    .music-animation {
-        text-align: right;
-        margin-top: -30px;
-    }
-
-    .corporate-h2 {
-        margin-left: 0px;
-        margin-top: 0px;
-    }
-
-    .corporate-img {
-        margin-left: 0px;
-        margin-top: -100px;
-    }
-
-    .non-profit-img {
-        margin-left: 0px;
-        margin-right: 100px;;
-    }
-
-    .non-profit {
-        text-align: right;
-        margin-bottom: 70px;
-    }
-
-    .sport-game {
-        padding-bottom: 125px;
-    }
 }
 
 .photo-text {
@@ -343,14 +246,18 @@ ul {
         position: relative;
         top: 0px;
     }
+}
 
-    .film-strip {
-        position: absolute;
-        transform: rotate(183deg);
-        padding-bottom: 115px;
-        top: -25px;
-        right: -83px;
-        opacity: 0.5;
+@media screen and (max-width: 992px) {
+    .photo-text {
+        position: relative;
+        top: 30px;
+        margin-left: 0px;
+    }
+
+    .left-block-img {
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -358,6 +265,13 @@ ul {
     font-size: 54px;
     color: #720f1b;
     font-family: 'fonts';
+}
+
+@media screen and (max-width: 425px) {
+    .photo-text h2 {
+        font-size: 40px;
+        font-family: 'fonts';
+    }
 }
 
 .photo-text p {
@@ -379,6 +293,17 @@ ul {
     opacity: 0.5;
 }
 
+@media screen and (max-width: 1200px) {
+    .film-strip {
+        position: absolute;
+        transform: rotate(183deg);
+        padding-bottom: 115px;
+        top: -25px;
+        right: -83px;
+        opacity: 0.5;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .film-strip {
         position: absolute;
@@ -390,6 +315,12 @@ ul {
     }
 }
 
+@media screen and (max-width: 992px) {
+    .film-strip {
+        display: none;
+    }
+}
+
 .line-text {
     width: 117px;
     height: 2px;
@@ -397,9 +328,21 @@ ul {
     margin: 40px 0px 40px 0px;;
 }
 
+@media screen and (max-width: 992px) {
+    .line-text {
+        margin: 40px 0px 40px 0px;
+    }
+}
+
 .main-block {
     background-color: #2d070b;
     padding-bottom: 155px;
+}
+
+@media screen and (max-width: 768px) {
+    .main-block {
+        padding-bottom: 95px;
+    }
 }
 
 .picture-studio img {
@@ -414,6 +357,14 @@ ul {
     text-transform: uppercase;
     padding: 90px 0px 16px 0px;
     font-family: 'fonts';
+}
+
+@media screen and (max-width: 992px) {
+    .filming h2 {
+        font-size: 55px;
+        padding: 55px 0px 16px 0px;
+        font-family: 'fonts';
+    }
 }
 
 .filming p {
@@ -439,6 +390,13 @@ ul {
     z-index: 10;
 }
 
+@media screen and (max-width: 992px) {
+
+    .commercial-h2 {
+        margin-left: 0px;
+    }
+}
+
 .commercial-h2 h2 {
     font-size: 78px;
     color: #fff;
@@ -449,6 +407,20 @@ ul {
 .img-commerc {
     margin-top: -45px;
     margin-left: 240px;
+}
+
+@media screen and (max-width: 768px) {
+    .commercial {
+        margin-left: 80px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .img-commerc {
+        margin-left: 0px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
 }
 
 .music-h2 {
@@ -469,6 +441,28 @@ ul {
     margin-left: 270px;
 }
 
+@media screen and (max-width: 768px) {
+    .music-img {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .music-animation {
+        text-align: right;
+        margin-top: -30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .music-animation {
+        margin-bottom: 50px;
+        margin-right: 80px;
+        font-family: 'fonts';
+    }
+}
+
 .corporate-h2 h2 {
     font-size: 67px;
     color: #fff;
@@ -483,6 +477,18 @@ ul {
     font-family: 'fonts';
 }
 
+@media screen and (max-width: 768px) {
+    .commercial-h2 h2,
+    .music-h2 h2,
+    .corporate-h2 h2,
+    .non-profit-h2 h2 {
+        font-size: 60px;
+        color: #fff;
+        text-transform: uppercase;
+        font-family: 'fonts';
+    }
+}
+
 .corporate-h2 {
     position: relative;
     margin-left: 245px;
@@ -490,10 +496,30 @@ ul {
     z-index: 10;
 }
 
+@media screen and (max-width: 992px) {
+    .corporate-h2 {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .corporate {
+        margin-left: 80px;
+    }
+}
+
 .corporate-img {
     position: relative;
     margin-top: -120px;
     margin-left: 165px;
+}
+
+@media screen and (max-width: 992px) {
+    .corporate-img {
+        margin-left: 0px;
+        margin-top: -100px;
+    }
 }
 
 .non-profit-h2 {
@@ -508,6 +534,33 @@ ul {
     margin-left: 70px;
     margin-top: -120px;
     margin-bottom: 70px;
+}
+
+@media screen and (max-width: 992px) {
+    .non-profit-img {
+        margin-left: 0px;
+        margin-right: 100px;;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .non-profit-img {
+        margin-top: -100px;
+        margin-right: 40px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .non-profit {
+        text-align: right;
+        margin-bottom: 70px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .non-profit {
+        margin-right: 80px;
+    }
 }
 
 .block-icons-buttom {
@@ -534,6 +587,12 @@ ul {
 
 .people-mask {
     margin-top: 12px;
+}
+
+@media screen and (max-width: 992px) {
+    .sport-game {
+        padding-bottom: 125px;
+    }
 }
 
 .sport-text {
