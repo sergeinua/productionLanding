@@ -62,18 +62,17 @@
                         <div class="col-xs-12">
                             <div class="img-footer">
                                 <div class="form gradient">
-                                    <form id="form" action="">
-                                        <p>Hello, my name is <input type="text" class="decorate" name="" placeholder="first&last name">.</p>
-                                        <p> I need a <input type="text" class="decorate" name="" placeholder="films, video, animation,">.</p>
+                                    <form id="form">
+                                        <p>Hello, my name is <input type="text" class="decorate" id="msgName" placeholder="first&last name">.</p>
+                                        <p> I need a <input type="text" class="decorate" id="msgType" placeholder="films, video, animation,">.</p>
                                         <p>approximate duration around <input type="text" class="decorate" name="" placeholder="xx:xx">.</p>
                                         <p>My budget is, <input type="text" class="decorate" name="" placeholder="1000$"></p>
                                         <p>You can reach me on my phone at <input type="text" class="decorate" name="" placeholder="xxx-xxx-xxx"></p>
-                                        <p>Or via email at <input type="text" class="decorate" name="" placeholder="your@email.com"></p>
+                                        <p>Or via email at <input type="text" class="decorate" id="msgTo" placeholder="your@email.com"></p>
                                     </form>
                                     <div class="send-btn">
-                                        <div class="send-img"><img src="img/icons/air_send.png" alt=""></div>
-                                        <div class="submit-btn">
-                                            <input type="submit" class="send">
+                                        <div class="send-img" onclick="sendEmail()">
+                                            <img src="img/icons/air_send.png" alt="">
                                         </div>
                                     </div>
                                     <div class="line-icons-footer">
