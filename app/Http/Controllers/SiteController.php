@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\MessageRecieved;
+use App\Message;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
@@ -14,9 +16,16 @@ class SiteController extends Controller
 
     public function sendMessage(Request $request)
     {
-        $name = $request->input('name');
-        $type = $request->input('type');
-        Mail::to($request->input('email'))->send('name: ' . $name . ' and type:' . $type);
-        return response()->json($request, 200);
+        $model = new Message();
+        $model->name = $request->input('name');
+        $model->type = $request->input('type');
+        $model->duration = $request->input('duration');
+        $model->budget = $request->input('budget');
+        $model->telephone = $request->input('telephone');
+        $model->email = $request->input('email');
+//        $model->save();
+        Mail::to('sergei.nikonov@yahoo.com')
+            ->send(new MessageRecieved($model));
+        return response()->json($model, 200);
     }
 }

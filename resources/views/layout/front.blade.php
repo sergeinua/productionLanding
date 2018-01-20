@@ -65,10 +65,10 @@
                                     <form id="form">
                                         <p>Hello, my name is <input type="text" class="decorate" id="msgName" placeholder="first&last name">.</p>
                                         <p> I need a <input type="text" class="decorate" id="msgType" placeholder="films, video, animation,">.</p>
-                                        <p>approximate duration around <input type="text" class="decorate" name="" placeholder="xx:xx">.</p>
-                                        <p>My budget is, <input type="text" class="decorate" name="" placeholder="1000$"></p>
-                                        <p>You can reach me on my phone at <input type="text" class="decorate" name="" placeholder="xxx-xxx-xxx"></p>
-                                        <p>Or via email at <input type="text" class="decorate" id="msgTo" placeholder="your@email.com"></p>
+                                        <p>approximate duration around <input type="text" class="decorate" id="msgDuration" placeholder="xx:xx">.</p>
+                                        <p>My budget is, <input type="text" class="decorate" id="msgBudget" placeholder="1000$"></p>
+                                        <p>You can reach me on my phone at <input type="text" class="decorate" id="msgTelephone" placeholder="xxx-xxx-xxx"></p>
+                                        <p>Or via email at <input type="text" class="decorate" id="msgEmail" placeholder="your@email.com"></p>
                                     </form>
                                     <div class="send-btn">
                                         <div class="send-img" onclick="sendEmail()">

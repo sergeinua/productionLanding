@@ -1,14 +1,17 @@
 function sendEmail() {
-    const name = $('#msgName').val(),
+    var name = $('#msgName').val(),
         type = $('#msgType').val(),
-        to = $('#msgTo').val();
-    console.log('name', name);
-    console.log('type', type);
-    console.log('to', to);
+        duration = $('#msgDuration').val(),
+        budget = $('#msgBudget').val(),
+        telephone = $('#msgTelephone').val(),
+        email = $('#msgEmail').val();
     $.post('/api/message', {
         name: name,
         type: type,
-        email: to
+        duration: duration,
+        budget: budget,
+        telephone: telephone,
+        email: email
     }).then(function (value) {
         console.log('val', value);
     })
