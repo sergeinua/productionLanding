@@ -23,9 +23,9 @@ class SiteController extends Controller
         $model->budget = $request->input('budget');
         $model->telephone = $request->input('telephone');
         $model->email = $request->input('email');
-//        $model->save();
-        Mail::to('sergei.nikonov@yahoo.com')
-            ->send(new MessageRecieved($model));
+        $model->save();
+//        Mail::to('')
+//            ->send(new MessageRecieved($model));
         return response()->json($model, 200);
     }
 }
