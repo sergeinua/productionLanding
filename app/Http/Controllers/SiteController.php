@@ -23,6 +23,7 @@ class SiteController extends Controller
         $model->budget = $request->input('budget');
         $model->telephone = $request->input('telephone');
         $model->email = $request->input('email');
+        $model->read = false;
         $model->save();
 //        Mail::to('')
 //            ->send(new MessageRecieved($model));

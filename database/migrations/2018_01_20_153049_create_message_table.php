@@ -22,6 +22,7 @@ class CreateMessageTable extends Migration
             $table->string('budget')->nullable();
             $table->string('telephone')->nullable();
             $table->string('email')->nullable();
+            $table->boolean('read');
         });
     }
 

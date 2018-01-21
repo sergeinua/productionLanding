@@ -11,4 +11,12 @@
 |
 */
 
-Route::get('/', 'SiteController@index')->name('home_page');
+Route::get('/', 'SiteController@index')->name('homeFront');
+
+Auth::routes();
+
+Route::prefix('admin')->group(function () {
+    Route::get('/', 'AdminController@index')->name('homeAdmin');
+
+    Route::get('/message', 'AdminController@messageList')->name('messageList');
+});
