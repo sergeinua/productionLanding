@@ -43,7 +43,8 @@ class AdminController extends Controller
     public function showMessage($id)
     {
         $model = Message::findOrFail($id);
-//        $model->read = true;
+        $model->read = true;
+        $model->save();
         return response()->json($model, 200);
     }
 }
