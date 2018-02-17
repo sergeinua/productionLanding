@@ -21,3 +21,8 @@ Route::post('message', [
     'uses' => 'SiteController@sendMessage',
     'name' => 'sendMessage'
 ]);
+
+Route::get('/message/{id}', [
+    'uses' => 'AdminController@showMessage',
+    'name' => 'showMessage'
+]);

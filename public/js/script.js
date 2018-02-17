@@ -13,6 +13,10 @@ function sendEmail() {
         telephone: telephone,
         email: email
     }).then(function (value) {
-        console.log('val', value);
+        $('#form').get(0).reset();
     })
+}
+
+function showLoader() {
+  // TODO
 }

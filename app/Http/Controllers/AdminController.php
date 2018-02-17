@@ -9,7 +9,7 @@ class AdminController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->middleware('auth', ['except' => ['showMessage']]);
     }
 
     /**
@@ -29,8 +29,9 @@ class AdminController extends Controller
      */
     public function messageList()
     {
-        dd(Message::orderBy('created_at', 'desc')->get());
-        return view('admin.message.list');
+//        dd(Message::orderBy('created_at', 'desc')->get());
+        $messages = Message::orderBy('created_at', 'desc')->get();
+        return view('admin.message.list')->with('messages', $messages);
     }
 
     /**
@@ -39,10 +40,10 @@ class AdminController extends Controller
      * @param $id
      * @return \Illuminate\Http\JsonResponse
      */
-    public function markAsRead($id)
+    public function showMessage($id)
     {
         $model = Message::findOrFail($id);
-        $model->read = true;
-        return response()->json('OK', 200);
+//        $model->read = true;
+        return response()->json($model, 200);
     }
 }
