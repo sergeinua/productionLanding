@@ -6,11 +6,13 @@ use App\Mail\MessageRecieved;
 use App\Message;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use App\Settings;
 
 class SiteController extends Controller
 {
     public function index()
     {
+        // dd(Settings::all()->count());
         return view('front.home');
     }
 
