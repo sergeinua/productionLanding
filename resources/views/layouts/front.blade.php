@@ -7,6 +7,8 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="fonts/font.css">
         <link rel="stylesheet" type="text/css" href="fonts/stylesheet.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
         <title>RedRoom</title>
     </head>
     <body>
@@ -32,7 +34,7 @@
                         </div>
                         <div class="line-buttom">
                             <div class="left-buttom hovers btn-danger">
-                                <a href="#">view projects</a>
+                                <a data-toggle="modal" data-target="#myModal">view projects</a>
                             </div>
                             <div class="right-buttom hovers btn-danger">
                                 <a href="#form">hire us</a>
@@ -93,6 +95,8 @@
                     </div>
                 </div>
                 <script src="js/jquery-3.2.1.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+                <script src="js/owl.carousel.min.js"></script>
                 <script src="js/script.js"></script>
             </footer>
         </div>

@@ -18,7 +18,7 @@
                             </tr>
                             @foreach ($messages as $message)
                                 <tr onclick="showDetails(<?= $message->id ?>)"
-                                  class={{ $message->read ? '' : 'msg-unread' }}>
+                                  class={{$message->read ? '' : 'msg-unread'}}>
                                     <td>{{$message->created_at}}</td>
                                     <td>{{$message->name ? $message->name : '-'}}</td>
                                     <td>{{$message->telephone ? $message->telephone : '-'}}</td>

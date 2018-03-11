@@ -758,3 +758,12 @@ input {
     color: rgb(249, 61, 84);
     padding: 0px;
 }
+
+.owl-carousel .owl-item {
+    height: 300px;
+    padding: 1rem;
+}
+
+.modal-content {
+    background-color: black;
+}
