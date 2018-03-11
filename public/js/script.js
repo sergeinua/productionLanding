@@ -40,3 +40,14 @@ $(document).ready(function() {
         }
     })
 });
+
+function showModal() {
+    $('#myModal').modal({
+      backdrop: 'static',
+      keyboard: false
+    });
+}
+
+function hideModal() {
+    $('#myModal').modal('hide');
+}

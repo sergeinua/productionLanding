@@ -34,7 +34,7 @@
                         </div>
                         <div class="line-buttom">
                             <div class="left-buttom hovers btn-danger">
-                                <a data-toggle="modal" data-target="#myModal">view projects</a>
+                                <a onclick="showModal()">view projects</a>
                             </div>
                             <div class="right-buttom hovers btn-danger">
                                 <a href="#form">hire us</a>
