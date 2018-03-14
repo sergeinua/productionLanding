@@ -12,8 +12,18 @@ class SiteController extends Controller
 {
     public function index()
     {
-        // dd(Settings::all()->count());
-        return view('front.home');
+        if (!Settings::all()->count()) {
+            $model = new Settings();
+            $model->first_block_text = 'FIRST BLOCK TEXT';
+            $model->second_block_text = 'SECOND BLOCK TEXT';
+            $model->third_block_text = 'THIRD BLOCK TEXT';
+            $model->insta_link = '/';
+            $model->youtube_link = '/';
+            $model->tel_num = '000';
+            $model->email = 'email@email.com';
+            $model->save();
+        }
+        return view('front.home')->with('settings', Settings::firstOrFail());
     }
 
     public function sendMessage(Request $request)

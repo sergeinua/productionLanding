@@ -18,7 +18,7 @@
                         <div class="photo-text">
                             <h2>We are a creative film and video production company.</h2>
                             <div class="line-text"></div>
-                            <p>Lorem ipsum dolor amet cred before they sold out pinterest church-key gochujang banh mi photo booth. 90's pug bushwick, cred farm-to-table seitan blue bottle edison bulb green juice umami. Marfa cornhole literally narwhal cloud bread craft beer taiyaki hella cliche sustainable. </p>
+                            <p>{{ $settings->first_block_text }}</p>
                         </div>
                     </div>
                 </div>
@@ -32,7 +32,7 @@
                             <div class="filming">
                                 <h2 id="film">filming services</h2>
                                 <div class="line-filming"></div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur nesciunt aspernatur labore, temporibus cupiditate cum, adipisci tempora asperiores quae quod placeat commodi est odio hic, nam quisquam alias. Magnam, nisi?</p>
+                                <p>{{ $settings->second_block_text }}</p>
                             </div>
                         </div>
                     </div>
@@ -124,7 +124,7 @@
                                     </div>
                                     <div class="sport-text">
                                         <h2>green gray</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde iste eaque, provident consectetur nostrum deleniti repudiandae ipsam officiis tempora magnam esse facere asperiores recusandae, molestiae, tenetur quia nam, culpa ex!</p>
+                                        <p>{{ $settings->third_block_text }}</p>
                                     </div>
                                 </div>
                             </div>

@@ -79,14 +79,14 @@
                                     </div>
                                     <div class="line-icons-footer">
                                         <ul>
-                                            <li><a href="#"><img src="img/icons/instagram.png" alt=""></a></li>
-                                            <li><a href="#"><img src="img/icons/youtube.png" alt=""></a></li>
-                                            <li><a href="#"><img src="img/icons/facebook.png" alt=""></a></li>
+                                            <li><a href="{{ $settings->insta_link }}"><img src="img/icons/instagram.png" alt=""></a></li>
+                                            <li><a href="{{ $settings->youtube_link }}"><img src="img/icons/youtube.png" alt=""></a></li>
+                                            <li><a href="{{ $settings->facebook_link }}"><img src="img/icons/facebook.png" alt=""></a></li>
                                         </ul>
                                         <div class="red-line"></div>
                                         <div class="text-red-line">
-                                            <p>777 55 66</p>
-                                            <p>director@redroom.com</p>
+                                            <p>{{ $settings->tel_num }}</p>
+                                            <p>{{ $settings->email }}</p>
                                         </div>
                                     </div>
                                 </div>
