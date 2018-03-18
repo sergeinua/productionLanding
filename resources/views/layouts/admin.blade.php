@@ -169,20 +169,15 @@
             <ul class="sidebar-menu">
                 <li class="header">Меню</li>
                 <li class="active">
-                    <a href="#">
+                    <a href="{{ route('homeAdmin') }}">
                         <span>Сообщения</span>
                     </a>
                 </li>
-                {{--<li class="treeview">--}}
-                    {{--<a href="#">--}}
-                        {{--<span>Каталог</span>--}}
-                        {{--<i class="fa fa-angle-left pull-right"></i>--}}
-                    {{--</a>--}}
-                    {{--<ul class="treeview-menu">--}}
-                        {{--<li><a href="{{ route('product_list') }}">Список товаров</a></li>--}}
-                        {{--<li><a href="{{ route('product_add') }}">Добавить товар</a></li>--}}
-                    {{--</ul>--}}
-                {{--</li>--}}
+                <li>
+                    <a href="{{ route('settings') }}">
+                        <span>Настройки</span>
+                    </a>
+                </li>
             </ul>
         </section>
     </aside>

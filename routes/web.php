@@ -19,4 +19,6 @@ Route::prefix('admin')->group(function () {
     Route::get('/', 'AdminController@index')->name('homeAdmin');
 
     Route::get('/message', 'AdminController@messageList')->name('messageList');
+
+    Route::any('/settings', 'AdminController@settings')->name('settings');
 });

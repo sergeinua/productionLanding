@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Message;
 use Illuminate\Http\Request;
+use App\Settings;
 
 class AdminController extends Controller
 {
@@ -46,5 +47,13 @@ class AdminController extends Controller
         $model->read = true;
         $model->save();
         return response()->json($model, 200);
+    }
+
+    public function settings(Request $request)
+    {
+      if ($request->isMethod('post')) {
+        dd($request);
+      }
+      return view('admin.settings.settings')->with('settings', Settings::firstOrFail());
     }
 }
