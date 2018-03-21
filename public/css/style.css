@@ -661,8 +661,8 @@ ul {
 .form p {
     color: #fff;
     text-align: left;
-    font-size: 30px;
-    padding: 15px 0px 15px 0px;
+    font-size: 20px;
+    padding: 10px 0;
     text-transform: uppercase;
 }
 
@@ -759,9 +759,17 @@ input {
     padding: 0px;
 }
 
+.owl-carousel {
+    margin: 0 0 60px;
+}
+
 .owl-carousel .owl-item {
-    height: 300px;
+/*    height: 300px;*/
     padding: 1rem;
+}
+
+.owl-carousel .item-video {
+   height: 480px;
 }
 
 .modal-content {
