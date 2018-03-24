@@ -51,9 +51,17 @@ class AdminController extends Controller
 
     public function settings(Request $request)
     {
-      if ($request->isMethod('post')) {
-        dd($request);
-      }
-      return view('admin.settings.settings')->with('settings', Settings::firstOrFail());
+        $model = Settings::firstOrFail();
+        if ($request->isMethod('post')) {
+            $model->first_block_text = $request->input('first_block_text');
+            $model->second_block_text = $request->input('second_block_text');
+            $model->insta_link = $request->input('insta_link');
+            $model->youtube_link = $request->input('youtube_link');
+            $model->facebook_link = $request->input('facebook_link');
+            $model->tel_num = $request->input('tel_num');
+            $model->email = $request->input('email');
+            $model->save();
+        }
+        return view('admin.settings.settings')->with('settings', $model);
     }
 }
