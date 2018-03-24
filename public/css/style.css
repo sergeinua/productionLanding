@@ -71,6 +71,10 @@ ul {
     }
 }
 
+.menu_line ul {
+  text-align: center;
+}
+
 .menu_line ul > li {
     display: -webkit-inline-box;
     padding-right: 100px;
@@ -196,11 +200,11 @@ ul {
     .right-buttom > a, .left-buttom > a,
     .buttom-main > a {
         text-transform: uppercase;
-        font-size: 15px;
+        font-size: 14px;
         color: #720f1b;
         text-align: center;
         position: relative;
-        top: 8px;
+        top: 13px;
     }
 }
 
