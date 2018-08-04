@@ -5,16 +5,18 @@ function sendEmail() {
         budget = $('#msgBudget').val(),
         telephone = $('#msgTelephone').val(),
         email = $('#msgEmail').val();
-    $.post('/api/message', {
-        name: name,
-        type: type,
-        duration: duration,
-        budget: budget,
-        telephone: telephone,
-        email: email
-    }).then(function (value) {
-        $('#form').get(0).reset();
-    })
+    if (name.length && telephone.length) {
+      $.post('/api/message', {
+          name: name,
+          type: type,
+          duration: duration,
+          budget: budget,
+          telephone: telephone,
+          email: email
+      }).then(function (value) {
+          $('#form').get(0).reset();
+      })
+    }
 }
 
 function showLoader() {
