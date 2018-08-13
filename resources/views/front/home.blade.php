@@ -34,7 +34,7 @@
             <div class="filming">
               <h2 id="film">filming services</h2>
               <div class="line-filming"></div>
-              <p>{{ $settings->second_block_text }}</p>
+              <p>{{ $settings->second_block_text }}</p> 
             </div>
           </div>
         </div>
@@ -100,6 +100,9 @@
       <div class="row">
         <div class="owl-carousel owl-theme">
           <div class="item-video">
+            <a class="owl-video" href="https://vimeo.com/284517387"></a>
+          </div>
+          <div class="item-video">
             <a class="owl-video" href="https://www.youtube.com/watch?v=0EMowVnDrsU"></a>
           </div>
           <div class="item-video">
@@ -113,9 +116,6 @@
           </div>
           <div class="item-video">
             <a class="owl-video" href="https://vimeo.com/179098094"></a>
-          </div>
-          <div class="item-video">
-            <a class="owl-video" href="https://vimeo.com/284517387"></a>
           </div>
         </div>
       </div>
