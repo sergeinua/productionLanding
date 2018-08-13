@@ -19,6 +19,7 @@
       <link rel="stylesheet" href="css/owl.carousel.min.css">
       <link rel="stylesheet" href="css/owl.theme.default.min.css">
       <title>RedRoom</title>
+      <meta name="google-site-verification" content="defZAHTK6nquXU0BMeTmKd7HZf7uAGpvxquMAghoK-8" />
   </head>
   <body>
     <header>
