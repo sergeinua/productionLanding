@@ -719,7 +719,7 @@ input {
 .send-btn {
     display: flex;
     justify-content: center;
-    width: 200px;
+    /* width: 200px; */
     margin: 0 auto;
 }
 
@@ -777,5 +777,16 @@ input {
 }
 
 .modal-content {
+    background-color: black;
+}
+
+.sent-text {
+    font-size: 3rem;
+    padding-top: 10px;
+    padding-right: 30px;
+}
+
+.sent {
+    color: rgb(249, 61, 84);
     background-color: black;
 }

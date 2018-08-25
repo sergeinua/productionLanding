@@ -14,13 +14,15 @@ function sendEmail() {
           telephone: telephone,
           email: email
       }).then(function (value) {
-          $('#form').get(0).reset();
-      })
+          messageSent();
+      });
     }
 }
 
-function showLoader() {
-  // TODO
+function messageSent() {
+    $('.sent-text').removeClass('hidden');
+    $('.send-btn').addClass('sent');
+    $('#form').get(0).reset();
 }
 
 $(document).ready(function() {
