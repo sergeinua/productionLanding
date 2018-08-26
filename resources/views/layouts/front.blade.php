@@ -95,6 +95,9 @@
                   </p>
                 </form>
                 <div class="send-btn">
+                  <div class="sent-text hidden">
+                    <span>Your request has been submitted successfully</span>
+                  </div>
                   <div class="send-img" onclick="sendEmail()">
                     <img src="img/icons/air_send.png" alt="">
                   </div>
