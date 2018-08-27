@@ -22,6 +22,7 @@ function sendEmail() {
 function messageSent() {
     $('.sent-text').removeClass('hidden');
     $('.send-btn').addClass('sent');
+    $('.send-img').addClass('disabled');
     $('#form').get(0).reset();
 }
 
